@@ -6,9 +6,12 @@ def main(url, syntax, attrs):
     """Acquire values of indexes from the SET website. Use "Inspect" option in modern web browsers to find the right
     combinations of syntax and attrs.
 
-    :param string url: Complete URL
-    :param string syntax: HTML syntax
-    :param dict attrs: Attributes in the HTML syntax that you are looking for.
+    :param url: Complete URL
+    :type url: str
+    :param syntax: HTML syntax
+    :type syntax: str
+    :param attrs: Attributes in the HTML syntax that you are looking for.
+    :type attrs: dict
     :return: Value of the specified index.
     """
     http = urllib3.PoolManager()
